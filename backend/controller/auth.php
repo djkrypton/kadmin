@@ -10,5 +10,5 @@
  {
      $param['title'] = "Login";
  
-     get_view('builtin/login', $param, false);
+     get_view('auth/login', $param, false);
  }

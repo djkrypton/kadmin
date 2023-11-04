@@ -10,5 +10,5 @@
  {
      $param['title'] = "User profile";
  
-     get_view('builtin/profile', $param);
+     get_view('user/profile', $param);
  }

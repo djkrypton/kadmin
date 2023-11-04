@@ -10,5 +10,5 @@ function error_404_controller()
 {
 	$param['title'] = "Page not found - 404";
 
-	get_view('builtin/error-404', $param, false);
+	get_view('error/error-404', $param, false);
 }
