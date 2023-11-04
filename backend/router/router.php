@@ -13,11 +13,20 @@ if (!isset($_GET['route']))
 
 switch ($_GET['route']) 
 {
-	//**********[ BUILTIN ]***********
+	//**********[ HOME ]***********
 
 	case 'home': home_controller(); break;
+
+	//**********[ AUTH ]***********
+
 	case 'login': login_controller(); break;
-	case 'user-profile': user_profile_controller(); break;
+
+	//**********[ USER ]***********
+
+	case 'profile': profile_controller(); break;
+
+	//**********[ ERRO ]***********
+
 	case 'error-404': error_404_controller(); break;
 
 	//**********[ OTHERS ]***********
