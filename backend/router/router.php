@@ -13,7 +13,7 @@ if (!isset($_GET['route']))
 
 switch ($_GET['route']) 
 {
-	//**********[ HOME ]***********
+	//**********[ GLOBAL ]***********
 
 	case 'home': home_controller(); break;
 
@@ -25,7 +25,7 @@ switch ($_GET['route'])
 
 	case 'profile': profile_controller(); break;
 
-	//**********[ ERRO ]***********
+	//**********[ ERROR ]***********
 
 	case 'error-404': error_404_controller(); break;
 
