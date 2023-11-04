@@ -18,6 +18,7 @@ switch ($_GET['route'])
 	case 'home': home_controller(); break;
 	case 'faq': faq_controller(); break;
 	case 'error-404': error_404_controller(); break;
+	case 'table': table_controller(); break;
 
 	//**********[ AUTH ]***********
 

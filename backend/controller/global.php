@@ -38,3 +38,16 @@ function error_404_controller()
 
 	get_view('global/error-404', $param, false);
 }
+
+ /***************************************
+ * 
+ * Description : Table
+ * 
+ * *************************************/
+
+ function table_controller()
+ {
+	 $param['title'] = "Table";
+ 
+	 get_view('global/table', $param);
+ }
