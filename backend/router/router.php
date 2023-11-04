@@ -16,6 +16,8 @@ switch ($_GET['route'])
 	//**********[ GLOBAL ]***********
 
 	case 'home': home_controller(); break;
+	case 'faq': faq_controller(); break;
+	case 'error-404': error_404_controller(); break;
 
 	//**********[ AUTH ]***********
 
@@ -24,10 +26,6 @@ switch ($_GET['route'])
 	//**********[ USER ]***********
 
 	case 'profile': profile_controller(); break;
-
-	//**********[ ERROR ]***********
-
-	case 'error-404': error_404_controller(); break;
 
 	//**********[ OTHERS ]***********
 
