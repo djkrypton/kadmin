@@ -12,10 +12,14 @@ function get_view (string $file_path, array $param = null, bool $enable_template
     $latte->setTempDirectory(BACKEND_DIR . '/tmp/');
 
     // Use custom page without default template
-    if ($enable_template == false)
-    {
+    if ($enable_template == false) {
         return $latte->render(BACKEND_DIR . '/view/'. $file_path .'.php', $param);
     }
+
+    $latte->addFilter('translate', function ($original) {
+        require $GLOBALS['lang_file'];
+        return $translated;
+    });
 
     $param['main_content'] = BACKEND_DIR . '/view/'. $file_path .'.php';
 
